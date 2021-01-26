@@ -1,0 +1,21 @@
+{
+  "name": "svgcleaner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-packager ./ --overwrite --platform=win32,darwin,linux"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "crypto-random-string": "^3.3.0"
+  }
+}

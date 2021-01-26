@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Adobe XD SVG Cleaner</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: teal;
+        padding: 0 3rem;
+      }
+      h1 {
+        margin-top: 1rem;
+      }
+      h1,
+      p,
+      div,
+      button {
+        margin-bottom: 1rem;
+      }
+      #input,
+      #output {
+        font-family: 'Source Code Pro', monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adobe XD SVG Cleaner</h1>
+    <p>
+      This will replace all those pesky <code>.cls-1</code> and
+      <code>.cls-2</code> classes in the svg...<strong>DO NOT</strong> use if
+      the classes used in the svg are something super common like
+      <code>a</code> or <code>b</code>.
+    </p>
+    <div>
+      <textarea
+        placeholder="Paste SVG here"
+        rows="15"
+        style="width: 100%"
+        type="text"
+        id="input"
+      ></textarea>
+    </div>
+    <button id="clean">Clean SVG</button>
+    <div>
+      <textarea
+        rows="15"
+        style="width: 100%"
+        type="text"
+        id="output"
+        readonly
+      ></textarea>
+    </div>
+    <footer>
+      <div>
+        <sup><small>&copy;</small></sup
+        >2020 Adrian Luk (Don't steal my shit... jk go ahead if you want...it's
+        nothing impressive)
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
